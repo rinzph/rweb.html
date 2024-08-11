@@ -1,0 +1,81 @@
+<html>
+
+<h1>Second page</h1>
+
+<p1>Welcome to the second page, you may click the help button to get a link to w3schools.com to learn and understand more codes.
+
+</p1>
+<p3>
+
+
+</p3>
+
+
+<form action="Practice.html">
+<input type="submit"
+value="Go back" 
+style="color: blue;font-size: 20px; background-color: rgb(209, 255, 6);position: relative;top:590px ;
+cursor: pointer;"
+>
+
+
+<style>
+p1 {font-size: 20px;color: aqua;}
+h1 {color: chartreuse;}
+body {background-image: url(https://c4.wallpaperflare.com/wallpaper/142/751/831/landscape-anime-digital-art-fantasy-art-wallpaper-preview.jpg);
+background-size: cover;}
+p2 {color:gold;font-family:Verdana;}
+
+mark1 {background-color: rgb(6, 56, 15);}
+
+</style>
+</form>
+
+<style>
+.modal {position: fixed;left:500px;top:300px; background-image: url(https://plus.unsplash.com/premium_photo-1675805914154-00fcbf6f1034?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+display: none;background-blend-mode: darken;border-radius: 10px;border-style:solid;
+}
+.modal-content{padding: 10px;text-align: center;max-width: 400px;}
+.close {font-size: 30px; float:right; font-weight: 30;
+cursor: pointer;
+
+}
+
+#pbut{cursor:pointer;}
+</style>
+<body>
+<button id="pbut" style="background-color: aqua;color: rgb(6, 56, 15);
+font-size: 20px;border-radius:10px">Help</button>
+
+<div id="popup" class="modal">
+    <div class="modal-content">
+<span class="close">&times;</span>
+<p2><mark1>You can click this <a href="https://w3schools.com" title="https://w3schools.com"
+    style="color:gold">w3schools link</a> to open a website where you can learn coding</mark1>
+</p2>
+</div>
+</div>
+<script>
+    var modal = document.getElementById("popup");
+    var btn = document.getElementById("pbut");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    
+</script>
+
+
+</body>
+</html>
